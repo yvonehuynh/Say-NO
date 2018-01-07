@@ -1,0 +1,80 @@
+@media only screen and (max-width: 680px) {
+    // action buttons
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=submit], button {
+        width: 30%;
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    // typography
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    // inputs
+
+    input[name=reason] {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    // footer {
+    footer {
+        a, p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+        // typography
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    div {
+        label {
+            font-size: 1.6rem;
+            margin: 10px;
+        }
+    }
+
+    .no-styles {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+            // typography
+    h1 {
+        font-size: 2rem;
+    }
+
+    div {
+        label {
+            font-size: 1.6rem;
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}

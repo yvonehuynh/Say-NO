@@ -1,0 +1,15 @@
+input[type=submit], button {
+    display: inline-block;
+    background: orange;
+    font-size: 2rem;
+    border: 1px solid black;
+    width: 15%;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 6;
+}

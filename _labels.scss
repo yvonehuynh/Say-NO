@@ -1,0 +1,41 @@
+div {
+    label {
+        display: inline-block;
+        background: white;
+        height: 50%;
+        border: 1px solid orange;
+        padding: 10px;
+        cursor: pointer;
+        p {
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.selected {
+    background: orange;
+    border: 1px solid orange;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=text] {
+    border: 2px solid orange;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.no-styles {
+    background: transparent;
+    height: auto;
+    width: auto;
+    border: none;
+    cursor: auto;
+    font-size: 2rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Say "NO!"</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Say "NO!"</h1>
+        <P>Having a hard time saying no to your partner, friend, or whoever it is? Don't worry, we got you covered. Give us an idea
+        of what you want to say no to and we will do the rest. Saying no has never gotten so easy!</P>
+        <form action="">
+            <!-- Your name -->
+            <label for="name" >Your Name</label>
+            <input type="text" name="name" id="name">
+
+            <!-- Person you are saying no to -->
+            <label for="person">Person you are saying no to:</label>
+            <input type="text" name="person" id="person">
+            <!-- Relationship -->
+                <label for="sibling"><p>Sibling</p></label>
+                <label for="partner">
+                    <p>Partner</p>
+                </label>
+                <input type="radio" name="relationship" id="partner" value="partner">
+                <label for="parent">
+                    <p>Parent</p>
+                </label>
+                <input type="radio" name="relationship" id="parent" value="parent">
+                <label for="friend">
+                    <p>Friend</p>
+                </label>
+                <input type="radio" name="relationship" id="friend" value="friend">
+                <label for="coworker">
+                    <p>Coworker</p>
+                </label>
+                <input type="radio" name="relationship" id="coworker" value="coworker">
+
+            <!-- What you are saying no to -->
+            <label for="reason">Task or thing you want to say no to</label>
+            <input type="text" name="reason">
+
+            <!-- How badly do you want to say no -->
+            <label for="not-much">
+                <p>I'll be okay if they refuse my refusal</p>
+            </label>
+            <input type="radio" name="howBadly" id="not-much" value="notBad">
+            <label for="really">
+                <p>I really want to get out of this</p>
+            </label>
+            <input type="radio" name="howBadly" id="really" value="reallyDont">
+            <label for="desperate">
+                <p>I am desperate</p>
+            </label>
+            <input type="radio" name="howBadly" id="desperate" value="desperate">
+            
+            <!-- When was the last time you said no to them -->
+            <label for="days">
+                <p>A few days ago</p>
+            </label>
+            <input type="radio" name="frequency" id="days" value="days">
+            <label for="months">
+                <p>A month ago</p>
+            </label>
+            <input type="radio" name="frequency" id="months" value="months">
+            <input type="submit">
+        </form>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+
+</body>
+</html>

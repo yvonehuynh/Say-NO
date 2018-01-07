@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Say "NO!"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <h1>Say "NO!"</h1>
-        <P>Having a hard time saying no to your partner, friend, or whoever it is? Don't worry, we got you covered. Give us an idea
-        of what you want to say no to and we will do the rest. Saying no has never gotten so easy!</P>
-        <form action="">
+        <P>Having a hard time saying no to your partner, friend, or whoever it is?  Give us an idea of what you want to say no to and we will do the rest. Saying no has never gotten so easy!</P>
+        <form action="" id="myForm">
             <!-- Your name -->
-            <label for="name" >Your Name</label>
+            <label for="name" class="no-styles" >Your Name</label>
             <input type="text" name="name" id="name">
 
             <!-- Person you are saying no to -->
-            <label for="person">Person you are saying no to:</label>
+            <label for="person" class="no-styles">The Recipient:</label>
             <input type="text" name="person" id="person">
             <!-- Relationship -->
+            <div class="relationships">
+                <p class="no-styles">What is your relationship with them?</p>
                 <label for="sibling"><p>Sibling</p></label>
                 <label for="partner">
                     <p>Partner</p>
@@ -37,40 +40,67 @@
                     <p>Coworker</p>
                 </label>
                 <input type="radio" name="relationship" id="coworker" value="coworker">
-
+            </div>
             <!-- What you are saying no to -->
-            <label for="reason">Task or thing you want to say no to</label>
+            <label for="reason" class="no-styles">Task or thing you want to say no to</label>
             <input type="text" name="reason">
 
             <!-- How badly do you want to say no -->
-            <label for="not-much">
-                <p>I'll be okay if they refuse my refusal</p>
-            </label>
-            <input type="radio" name="howBadly" id="not-much" value="notBad">
-            <label for="really">
-                <p>I really want to get out of this</p>
-            </label>
-            <input type="radio" name="howBadly" id="really" value="reallyDont">
-            <label for="desperate">
-                <p>I am desperate</p>
-            </label>
-            <input type="radio" name="howBadly" id="desperate" value="desperate">
-            
+            <div class="how-badly">
+                <p class="no-styles">How badly do you not want to do this?</p>
+                <label for="not-much">
+                    <p>I'll be okay if they refuse my refusal</p>
+                </label>
+                <input type="radio" name="howBadly" id="not-much" value="notBad">
+                <label for="really">
+                    <p>I really want to get out of this</p>
+                </label>
+                <input type="radio" name="howBadly" id="really" value="reallyDont">
+                <label for="desperate">
+                    <p>I am desperate</p>
+                </label>
+                <input type="radio" name="howBadly" id="desperate" value="desperate">
+            </div>
             <!-- When was the last time you said no to them -->
-            <label for="days">
-                <p>A few days ago</p>
-            </label>
-            <input type="radio" name="frequency" id="days" value="days">
-            <label for="months">
-                <p>A month ago</p>
-            </label>
-            <input type="radio" name="frequency" id="months" value="months">
-            <input type="submit">
+            <div class="frequency">
+                <p class="no-styles">How long ago did you say "no" to them?</p>
+                <label for="days">
+                    <p>A few days ago</p>
+                </label>
+                <input type="radio" name="frequency" id="days" value="days">
+                <label for="months">
+                    <p>A month ago</p>
+                </label>
+                <input type="radio" name="frequency" id="months" value="months">
+            </div>
+            <div class="action-buttons">
+                <input type="submit">
+                <button class="refresh">Start Over</button>
+            </div>
         </form>
+
+        <div class="final-answer">
+
+        </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+
+    <footer>
+        <div class="icon-container">
+            <a href="https://twitter.com/yvonecodesit"><i class="fa fa-twitter" aria-hidden="true"><span class="sr-only">Twitter</span></i></a>
+            <a href="https://github.com/yvonehuynh"><i class="fa fa-github" aria-hidden="true"><span class="sr-only">Github</span></i></a>
+            <a href="http://yvonecodesit.ca/"><i class="fa fa-user" aria-hidden="true"><span class="sr-only">Portfolio</span></i></a>
+        </div>
+        <div>
+            <p>Created By: Yvone Huynh 2018</p>
+        </div>
+    </footer>
+
+<!-- Font Awesome -->
+<script src="https://use.fontawesome.com/3259d81f6e.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>

@@ -2,6 +2,7 @@ $(document).ready(function(){
     console.log("hello");
         $("form").on("submit", function(e) {
             e.preventDefault();
+            $(".final-answer").addClass("final");
             const userName = $("#name").val();
             const recipient = $("#person").val();
             const relationship = $("input[name=relationship]:checked").val();
@@ -64,7 +65,12 @@ $(document).ready(function(){
             $(this).addClass("selected");
         });
 
-
+        // when refresh button is clicked, refresh the page and empty the input fields
+        $(".refresh").on("click", function(e){
+            e.preventDefault();
+            $("input[type=text]").val("");
+            window.location.reload();
+        })
 
 
 
